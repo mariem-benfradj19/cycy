@@ -45,10 +45,11 @@ class __TwigTemplate_244f5f0b585e66013ed560ac049cc705 extends Template
         // line 1
         yield "<!DOCTYPE html>
 
+
 <title>Course index</title>
 
 ";
-        // line 5
+        // line 6
         yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -65,7 +66,7 @@ class __TwigTemplate_244f5f0b585e66013ed560ac049cc705 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
+        // line 7
         yield "    <h1>Course index</h1>
 
     <table class=\"table\">
@@ -80,46 +81,46 @@ class __TwigTemplate_244f5f0b585e66013ed560ac049cc705 extends Template
         </thead>
         <tbody>
         ";
-        // line 19
+        // line 20
         $context['_parent'] = $context;
-        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["courses"]) || array_key_exists("courses", $context) ? $context["courses"] : (function () { throw new RuntimeError('Variable "courses" does not exist.', 19, $this->source); })()));
+        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["courses"]) || array_key_exists("courses", $context) ? $context["courses"] : (function () { throw new RuntimeError('Variable "courses" does not exist.', 20, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["course"]) {
-            // line 20
+            // line 21
             yield "            <tr>
                 <td>";
-            // line 21
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["course"], "id", [], "any", false, false, false, 21), "html", null, true);
-            yield "</td>
-                <td>";
             // line 22
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["course"], "titre", [], "any", false, false, false, 22), "html", null, true);
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["course"], "id", [], "any", false, false, false, 22), "html", null, true);
             yield "</td>
                 <td>";
             // line 23
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["course"], "description", [], "any", false, false, false, 23), "html", null, true);
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["course"], "titre", [], "any", false, false, false, 23), "html", null, true);
             yield "</td>
                 <td>";
             // line 24
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["course"], "contenu", [], "any", false, false, false, 24), "html", null, true);
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["course"], "description", [], "any", false, false, false, 24), "html", null, true);
+            yield "</td>
+                <td>";
+            // line 25
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["course"], "contenu", [], "any", false, false, false, 25), "html", null, true);
             yield "</td>
                 <td>
                     <a href=\"";
-            // line 26
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_course_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["course"], "id", [], "any", false, false, false, 26)]), "html", null, true);
+            // line 27
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_course_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["course"], "id", [], "any", false, false, false, 27)]), "html", null, true);
             yield "\">show</a>
                     <a href=\"";
-            // line 27
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_course_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["course"], "id", [], "any", false, false, false, 27)]), "html", null, true);
+            // line 28
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_course_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["course"], "id", [], "any", false, false, false, 28)]), "html", null, true);
             yield "\">edit</a>
                 </td>
             </tr>
         ";
             $context['_iterated'] = true;
         }
-        // line 34
+        // line 35
         if (!$context['_iterated']) {
-            // line 31
+            // line 32
             yield "            <tr>
                 <td colspan=\"5\">no records found</td>
             </tr>
@@ -128,12 +129,12 @@ class __TwigTemplate_244f5f0b585e66013ed560ac049cc705 extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_key'], $context['course'], $context['_parent'], $context['_iterated']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 35
+        // line 36
         yield "        </tbody>
     </table>
 
     <a href=\"";
-        // line 38
+        // line 39
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_course_new");
         yield "\">Create new</a>
 ";
@@ -156,12 +157,13 @@ class __TwigTemplate_244f5f0b585e66013ed560ac049cc705 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  137 => 38,  132 => 35,  123 => 31,  121 => 34,  113 => 27,  109 => 26,  104 => 24,  100 => 23,  96 => 22,  92 => 21,  89 => 20,  84 => 19,  69 => 6,  52 => 5,  46 => 1,);
+        return array (  138 => 39,  133 => 36,  124 => 32,  122 => 35,  114 => 28,  110 => 27,  105 => 25,  101 => 24,  97 => 23,  93 => 22,  90 => 21,  85 => 20,  70 => 7,  53 => 6,  46 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("<!DOCTYPE html>
+
 
 <title>Course index</title>
 

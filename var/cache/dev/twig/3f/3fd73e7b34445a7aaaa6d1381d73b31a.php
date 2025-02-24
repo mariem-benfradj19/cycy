@@ -14,7 +14,7 @@ use Twig\Source;
 use Twig\Template;
 use Twig\TemplateWrapper;
 
-/* home/Courses.html.twig */
+/* Home/Courses.html.twig */
 class __TwigTemplate_8b5ce44b0dc06b0c55cd1e34a717f356 extends Template
 {
     private Source $source;
@@ -39,7 +39,7 @@ class __TwigTemplate_8b5ce44b0dc06b0c55cd1e34a717f356 extends Template
     {
         $macros = $this->macros;
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "home/Courses.html.twig"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "Home/Courses.html.twig"));
 
         // line 1
         yield "<!DOCTYPE html>
@@ -1485,7 +1485,7 @@ class __TwigTemplate_8b5ce44b0dc06b0c55cd1e34a717f356 extends Template
      */
     public function getTemplateName(): string
     {
-        return "home/Courses.html.twig";
+        return "Home/Courses.html.twig";
     }
 
     /**
@@ -2929,6 +2929,6 @@ class __TwigTemplate_8b5ce44b0dc06b0c55cd1e34a717f356 extends Template
 
 </body>
 
-</html>", "home/Courses.html.twig", "C:\\Users\\Lenovo IdeaPad 3i\\Downloads\\Novalearn-INTEGRATION_F_FINAL\\templates\\Home\\Courses.html.twig");
+</html>", "Home/Courses.html.twig", "C:\\Users\\Lenovo IdeaPad 3i\\Downloads\\Novalearn-INTEGRATION_F_FINAL\\templates\\Home\\Courses.html.twig");
     }
 }
